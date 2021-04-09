@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import java.util.Stack;
 
-public class TestStack {
+public class StackTest {
     Stack<Person> personStack = new Stack<>();
     Stack<Address> addressStack = new Stack<>();
     Person person1 = new Person("Cathy", 1971);

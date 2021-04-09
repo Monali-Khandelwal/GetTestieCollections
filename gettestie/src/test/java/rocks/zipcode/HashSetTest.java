@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-public class TestHashSet {
+public class HashSetTest {
     Set<Person> personHashSet = new HashSet<>();
     Person person1 = new Person("Cathy", 1971);
     Person person2 = new Person("Marry", 1988);

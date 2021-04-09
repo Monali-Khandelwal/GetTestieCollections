@@ -5,23 +5,23 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
-public class TestArrayList {
-    List<Person> personList = new ArrayList<>();
+public class ArrayListTest {
+    ArrayList<Person> personList = new ArrayList<>();
     Person person1 = new Person("Cathy", 1971);
     Person person2 = new Person("Marry", 1988);
+
 
     @Test
     public void testAdd() {
         //Given:
-        List<String> arrayList = new ArrayList<>();
+        ArrayList<String> arrayList = new ArrayList<>();
 
         //When:
-        arrayList.add("Hello World");
+        arrayList.add("Zipcode");
 
         //Then:
-        Assert.assertTrue(arrayList.get(0).equals("Hello World"));
+        Assert.assertTrue(arrayList.get(0).equals("Zipcode"));
     }
 
     @Test
@@ -29,13 +29,13 @@ public class TestArrayList {
         //Given:
         personList.add(person1);
         personList.add(person2);
-        Person mike = new Person("Nyra", 1995);
+        Person person3 = new Person("Sandy", 1980);
 
         //When:
-        personList.add(0, mike);
+        personList.add(0, person3);
 
         //Then:
-        Assert.assertSame(personList.get(0), mike);
+        Assert.assertSame(personList.get(0), person3);
     }
 
     @Test
@@ -174,5 +174,4 @@ public class TestArrayList {
         //Then:
         Assert.assertSame(personList.get(1), person1);
     }
-
 }

@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class TestHashMap {
+public class HashMapTest {
     HashMap<Person, Address> personAddressMap = new HashMap<>();
     Person person1 = new Person("Cathy", 1971);
     Person person2 = new Person("Marry", 1988);

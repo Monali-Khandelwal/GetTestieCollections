@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class TestLinkedList {
+public class LinkedListTest {
 
     Queue<Person> personQueue = new LinkedList<>();
     Person person1 = new Person("Cathy", 1971);
